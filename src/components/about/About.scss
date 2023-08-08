@@ -1,0 +1,68 @@
+
+h1{
+    margin: 4rem;
+    color: gray;
+text-align: center;
+font-size: 4rem;
+font-family: math;
+letter-spacing: 15px;
+}
+
+.about{
+    
+   
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    .left{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        
+        flex: 5;
+        img{
+            border-radius: 1rem;
+            height: 25rem;
+    width: 21rem;
+    object-fit: cover;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+        flex: 6;
+        color: white;
+
+        .heading{
+            font-family: fantasy;
+            font-size: xx-large;
+            animation: col 3s linear alternate-reverse infinite ;
+        }
+        @keyframes col {
+            0%{
+                color: white;
+            }  
+            100%{
+                color: gray;
+            }          
+        }
+
+        .breif{
+            font-size: large;
+            padding-right: 5rem;
+            span{
+                color: bisque;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .about{
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,85 @@
+.skills{
+    padding-bottom: 3rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        letter-spacing: 15px;
+        color: gray;
+        margin: 1rem;
+        text-align: center;
+    }
+    p{
+        font-size: x-large;
+        color: white;
+
+    }
+    .skill{
+        display: grid;
+        margin-top: 3rem;
+        width: 60%;
+        place-items:center;
+        grid-template-columns: repeat(4,1fr);
+        .boxes{
+            width: 6.4rem;
+            margin:2rem 0;
+            padding: 0;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+
+            img{
+                height: 6rem;
+            border: 1px solid gray;
+            border-radius: 50%;
+            overflow: hidden;
+            }
+            
+        }
+        
+        .boxes:hover{
+            background: linear-gradient(gray,grey);
+            overflow: hidden;
+        }
+    }
+
+    .slider_track {
+        width: 100%;
+        margin: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+        position: relative;
+
+        .rightShade,
+        .leftShade {
+            width: 100px;
+            height: 300px;
+            position: absolute;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .rightShade {
+            right: 0px;
+            background: linear-gradient(to left, rgba(33, 55, 109, 0.6), rgb(255, 255, 255, 0));
+        }
+
+        .leftShade {
+            left: 0px;
+            background: linear-gradient(to right, rgba(33, 55, 109, 0.6), rgb(255, 255, 255, 0));
+        }
+    }
+
+}
+
+@media (max-width:600px) {
+    .skills .skill{
+        display: grid;
+        place-content:center;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}

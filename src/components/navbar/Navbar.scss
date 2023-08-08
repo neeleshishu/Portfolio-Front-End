@@ -1,0 +1,33 @@
+.navbar{
+    width: 83%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+
+    .left{
+        display: flex;
+        gap: 0.5rem;
+        animation: nav 0.5s 1s linear;
+    }
+    .right{
+        animation: nav1 0.5s 1s linear;
+    }
+    @keyframes nav {
+        0%{
+            transform: translateX(-15rem);
+        }     
+        100%{
+            transform: translateX(0rem);
+        }   
+    }
+    @keyframes nav1 {
+        0%{
+            transform: translateX(9rem);
+        }     
+        100%{
+            transform: translateX(0rem);
+        }   
+    }
+}
